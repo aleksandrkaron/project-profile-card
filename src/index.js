@@ -22,7 +22,7 @@ function Intro() {
 function SkillList() {
   return (
     <div className="skill-list">
-      <Skill name="C#/.NET Core" style={{ color: "red" }} />
+      <Skill name="C#/.NET Core" />
       <Skill name="JavaScript/TypeScript" />
       <Skill name="React//Next.js/Angular" />
       <Skill name="PHP" />
