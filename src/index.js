@@ -3,15 +3,36 @@ import ReactDOM, { createRoot } from "react-dom/client";
 import "./styles.css";
 
 function Avatar() {
-  return <h1>Hello!</h1>;
+  return <img className="avatar" src="./alex.jpg" alt="Photo of Alex" />;
 }
 
 function Intro() {
-  return <h1>Hello!</h1>;
+  return (
+    <div>
+      <h1>Alexandre Caron</h1>
+      <p>
+        Enthusiastic Full Stack Web Developer, passionate about learning and
+        creation. <br />
+        Strong skills in both front-end and back-end development.
+      </p>
+    </div>
+  );
 }
 
 function SkillList() {
-  return <h1>Hello!</h1>;
+  return (
+    <div className="skill-list">
+      <Skill name="C#/.NET Core" style={{ color: "red" }} />
+      <Skill name="JavaScript/TypeScript" />
+      <Skill name="React//Next.js/Angular" />
+      <Skill name="PHP" />
+      <Skill name="SQL" />
+    </div>
+  );
+}
+
+function Skill(props) {
+  return <p className="skill">{props.name}</p>;
 }
 
 function App() {
@@ -20,7 +41,6 @@ function App() {
       <Avatar />
       <div className="data">
         <Intro />
-        {/* One skill component for each web dev skill*/}
         <SkillList />
       </div>
     </div>
