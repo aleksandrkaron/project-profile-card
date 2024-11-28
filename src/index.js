@@ -22,17 +22,24 @@ function Intro() {
 function SkillList() {
   return (
     <div className="skill-list">
-      <Skill name="C#/.NET Core" />
-      <Skill name="JavaScript/TypeScript" />
-      <Skill name="React//Next.js/Angular" />
-      <Skill name="PHP" />
-      <Skill name="SQL" />
+      <Skill name="C#/.NET Core" color="#66217b" />
+      <Skill name="JavaScript/TypeScript" color="#0049B7" />
+      <Skill name="React/Next.js/Angular" color="#BB2649" />
+      <Skill name="PHP" color="#009B77" />
+      <Skill name="SQL" color="#E15D44" />
     </div>
   );
 }
 
 function Skill(props) {
-  return <p className="skill">{props.name}</p>;
+  return (
+    <div
+      className="skill"
+      style={{ backgroundColor: props.color, color: "white" }}
+    >
+      {props.name}
+    </div>
+  );
 }
 
 function App() {
